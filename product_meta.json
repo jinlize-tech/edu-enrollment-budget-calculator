@@ -1,0 +1,25 @@
+{
+  "number": 12,
+  "product_id": "JLZ-EDU-SK-012",
+  "chinese_name": "招生预算测算",
+  "english_name": "Enrollment Budget Calculator",
+  "repository_name": "edu-enrollment-budget-calculator",
+  "product_type": "Skill",
+  "category": "01 招生营销中心",
+  "version": "1.0.0",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED",
+  "license": "Apache-2.0",
+  "baseline_tag": "education-product-baseline-v1.0.0",
+  "package_path": "dist/edu-enrollment-budget-calculator-v1.0.0.zip",
+  "calculator": true,
+  "core_input": "渠道报价、预计线索量、到访率、成交率、客单价、人员成本和活动固定成本",
+  "main_output": "预算明细、获客成本、转化成本、盈亏平衡点、敏感性分析和假设表",
+  "package_entries": [
+    "edu-enrollment-budget-calculator/SKILL.md",
+    "edu-enrollment-budget-calculator/references/DOMAIN_GUIDE.md",
+    "edu-enrollment-budget-calculator/references/EXAMPLES.md",
+    "edu-enrollment-budget-calculator/templates/OUTPUT_TEMPLATE.md",
+    "edu-enrollment-budget-calculator/scripts/calculate.js"
+  ]
+}

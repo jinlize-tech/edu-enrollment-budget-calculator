@@ -1,0 +1,19 @@
+{
+  "product_id": "JLZ-EDU-SK-012",
+  "repository_name": "edu-enrollment-budget-calculator",
+  "product_type": "Skill",
+  "version": "1.0.0",
+  "package_path": "dist/edu-enrollment-budget-calculator-v1.0.0.zip",
+  "sha256": "8DFD68BA888C488C85B344AB8F54DDDA20834DBF2460454966C8782B0BF13EC9",
+  "bytes": 5829,
+  "entries": [
+    "edu-enrollment-budget-calculator/SKILL.md",
+    "edu-enrollment-budget-calculator/references/DOMAIN_GUIDE.md",
+    "edu-enrollment-budget-calculator/references/EXAMPLES.md",
+    "edu-enrollment-budget-calculator/templates/OUTPUT_TEMPLATE.md",
+    "edu-enrollment-budget-calculator/scripts/calculate.js"
+  ],
+  "built_at": "2026-11-06T21:38:58.6180867+08:00",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED"
+}
