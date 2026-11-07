@@ -1,0 +1,727 @@
+{
+  "product_id": "JLZ-EDU-SK-012",
+  "repository_name": "edu-enrollment-budget-calculator",
+  "product_type": "Skill",
+  "version": "1.0.1",
+  "tested_at": "2026-11-07T09:09:27.2740471+08:00",
+  "tested_tree_sha": "2d8b2cbd4d7d272544afa731e94f90f14c182a9e",
+  "package_path": "dist/edu-enrollment-budget-calculator-v1.0.1.zip",
+  "package_sha256": "76C83A9DD023A97F9ED838B2ED24A733AFE26E3A21EA27A7AC871B8774151DE9",
+  "layers": {
+    "T1_FILE_STRUCTURE": [
+      {
+        "name": "exists:README.md",
+        "input": "exists:README.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:PRODUCT_SPEC.md",
+        "input": "exists:PRODUCT_SPEC.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:LICENSE",
+        "input": "exists:LICENSE",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:BASELINE_VERSION.md",
+        "input": "exists:BASELINE_VERSION.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:USAGE.md",
+        "input": "exists:USAGE.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:CHANGELOG.md",
+        "input": "exists:CHANGELOG.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:VERSION",
+        "input": "exists:VERSION",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:THIRD_PARTY_NOTICES.md",
+        "input": "exists:THIRD_PARTY_NOTICES.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:product_meta.json",
+        "input": "exists:product_meta.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:package-manifest.json",
+        "input": "exists:package-manifest.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:G5_G9_CHANGE_RECORD.md",
+        "input": "exists:G5_G9_CHANGE_RECORD.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:dist/edu-enrollment-budget-calculator-v1.0.1.zip",
+        "input": "exists:dist/edu-enrollment-budget-calculator-v1.0.1.zip",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/TEST_CASES.md",
+        "input": "exists:tests/TEST_CASES.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/validate_package.ps1",
+        "input": "exists:tests/validate_package.ps1",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/scenarios/complete.json",
+        "input": "exists:tests/scenarios/complete.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/scenarios/missing.json",
+        "input": "exists:tests/scenarios/missing.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/scenarios/conflict.json",
+        "input": "exists:tests/scenarios/conflict.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/scenarios/sensitive.json",
+        "input": "exists:tests/scenarios/sensitive.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/scenarios/malformed.txt",
+        "input": "exists:tests/scenarios/malformed.txt",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:scripts/validate_input.js",
+        "input": "exists:scripts/validate_input.js",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:SKILL.md",
+        "input": "exists:SKILL.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:references/DOMAIN_GUIDE.md",
+        "input": "exists:references/DOMAIN_GUIDE.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:references/EXAMPLES.md",
+        "input": "exists:references/EXAMPLES.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:templates/OUTPUT_TEMPLATE.md",
+        "input": "exists:templates/OUTPUT_TEMPLATE.md",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:scripts/calculate.js",
+        "input": "exists:scripts/calculate.js",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/calculator-cases.json",
+        "input": "exists:tests/calculator-cases.json",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      },
+      {
+        "name": "exists:tests/calculator-cases",
+        "input": "exists:tests/calculator-cases",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "exists",
+        "passed": true
+      }
+    ],
+    "T2_METADATA_CONTRACT": [
+      {
+        "name": "version",
+        "input": "version",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "1.0.1",
+        "actual": "1.0.1",
+        "passed": true
+      },
+      {
+        "name": "status",
+        "input": "status",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "G9_PRE_RELEASE_ACCEPTED",
+        "actual": "G9_PRE_RELEASE_ACCEPTED",
+        "passed": true
+      },
+      {
+        "name": "g5_status",
+        "input": "g5_status",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "G5_STRENGTHENED",
+        "actual": "G5_STRENGTHENED",
+        "passed": true
+      },
+      {
+        "name": "runtime_status",
+        "input": "runtime_status",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "NOT_RUNTIME_VERIFIED",
+        "actual": "NOT_RUNTIME_VERIFIED",
+        "passed": true
+      },
+      {
+        "name": "workbuddy_status",
+        "input": "workbuddy_status",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "WORKBUDDY_VALIDATION_NOT_IN_SCOPE",
+        "actual": "WORKBUDDY_VALIDATION_NOT_IN_SCOPE",
+        "passed": true
+      },
+      {
+        "name": "package_state",
+        "input": "package_state",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+        "actual": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+        "passed": true
+      },
+      {
+        "name": "baseline_commit",
+        "input": "baseline_commit",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "40-char commit SHA",
+        "actual": "faebceecaa12496012eb0f8fdf6c5ec267968735",
+        "passed": true
+      },
+      {
+        "name": "main_output_fields",
+        "input": "main_output_fields",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "at least one output field",
+        "actual": "5",
+        "passed": true
+      },
+      {
+        "name": "skill_name",
+        "input": "skill_name",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "edu-enrollment-budget-calculator",
+        "actual": "frontmatter",
+        "passed": true
+      },
+      {
+        "name": "skill_version",
+        "input": "skill_version",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "1.0.1",
+        "actual": "frontmatter",
+        "passed": true
+      },
+      {
+        "name": "skill_field:display_name",
+        "input": "skill_field:display_name",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:display_name_en",
+        "input": "skill_field:display_name_en",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:description",
+        "input": "skill_field:description",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:description_zh",
+        "input": "skill_field:description_zh",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:description_en",
+        "input": "skill_field:description_en",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:examples_zh",
+        "input": "skill_field:examples_zh",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:examples_en",
+        "input": "skill_field:examples_en",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "skill_field:author",
+        "input": "skill_field:author",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present",
+        "actual": "checked",
+        "passed": true
+      }
+    ],
+    "T3_PRODUCT_CONTRACT": [
+      {
+        "name": "workflow",
+        "input": "workflow",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "workflow section",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "product_specific_rules",
+        "input": "product_specific_rules",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "product-specific rules and dedup boundary",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "traceability_matrix",
+        "input": "traceability_matrix",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "input-to-output mapping",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "input_contract",
+        "input": "input_contract",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "渠道报价、预计线索量、到访率、成交率、客单价、人员成本和活动固定成本",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_contract",
+        "input": "output_contract",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "预算明细、获客成本、转化成本、盈亏平衡点、敏感性分析和假设表",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "exception_boundary",
+        "input": "exception_boundary",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exception and refusal",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "independence",
+        "input": "independence",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "independent use",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_field:预算明细",
+        "input": "output_field:预算明细",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present in template",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_field:获客成本",
+        "input": "output_field:获客成本",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present in template",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_field:转化成本",
+        "input": "output_field:转化成本",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present in template",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_field:盈亏平衡点",
+        "input": "output_field:盈亏平衡点",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present in template",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "output_field:敏感性分析和假设表",
+        "input": "output_field:敏感性分析和假设表",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "present in template",
+        "actual": "checked",
+        "passed": true
+      }
+    ],
+    "T4_DETERMINISTIC_FUNCTION": [
+      {
+        "name": "input_validator_complete",
+        "input": "tests/scenarios/complete.json",
+        "execution": "node scripts/validate_input.js tests/scenarios/complete.json",
+        "expected": "exit=0 status=READY_FOR_PROCESSING",
+        "actual": "exit=0 status=READY_FOR_PROCESSING",
+        "passed": true
+      },
+      {
+        "name": "output_contract_returned",
+        "input": "tests/scenarios/complete.json",
+        "execution": "compare validator output_fields to product_meta.main_output_fields",
+        "expected": "5 output fields",
+        "actual": "5 output fields",
+        "passed": true
+      },
+      {
+        "name": "calculator_case_count",
+        "input": "tests/calculator-cases.json",
+        "execution": "load executable calculator case index",
+        "expected": "at least 1 executed calculator case",
+        "actual": "10",
+        "passed": true
+      },
+      {
+        "name": "calculator:normal",
+        "input": "tests/calculator-cases/normal.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/normal.json",
+        "expected": "exit=0 expected={\"status\":\"ok\",\"projections\":{\"expected_revenue\":600000,\"expected_visits\":400,\"expected_enrollments\":100},\"economics\":{\"customer_acquisition_cost\":100,\"contribution_margin_per_enrollment\":5000,\"net_benefit\":482000,\"cost_per_enrollment\":1180},\"break_even\":{\"leads\":40,\"achievable\":true,\"enrollments\":4}}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":1000,\"expected_visits\":400,\"expected_enrollments\":100,\"expected_revenue\":600000},\"cost_breakdown\":{\"channel_marketing_cost\":10000,\"personnel_cost\":5000,\"activity_fixed_cost\":3000,\"fixed_investment\":18000,\"variable_cost_per_enrollment\":1000,\"total_variable_cost\":100000,\"total_investment\":118000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":100,\"cost_per_enrollment\":1180,\"contribution_margin_per_enrollment\":5000,\"net_benefit\":482000},\"break_even\":{\"achievable\":true,\"enrollments\":4,\"leads\":40,\"reason\":null},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.32,\"close_rate\":0.2,\"enrollments\":64,\"revenue\":384000,\"net_benefit\":302000},{\"change_rate\":-0.1,\"visit_rate\":0.36,\"close_rate\":0.225,\"enrollments\":81,\"revenue\":486000,\"net_benefit\":387000},{\"change_rate\":0,\"visit_rate\":0.4,\"close_rate\":0.25,\"enrollments\":100,\"revenue\":600000,\"net_benefit\":482000},{\"change_rate\":0.1,\"visit_rate\":0.44,\"close_rate\":0.275,\"enrollments\":121,\"revenue\":726000,\"net_benefit\":587000},{\"change_rate\":0.2,\"visit_rate\":0.48,\"close_rate\":0.3,\"enrollments\":144,\"revenue\":864000,\"net_benefit\":702000}]}",
+        "passed": true
+      }
+    ],
+    "T5_SCENARIO_TESTS": [
+      {
+        "name": "calculator:percent-input",
+        "input": "tests/calculator-cases/percent-input.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/percent-input.json",
+        "expected": "exit=0 expected={\"status\":\"ok\",\"projections\":{\"expected_visits\":400,\"expected_enrollments\":100},\"break_even\":{\"leads\":20,\"enrollments\":2}}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":1000,\"expected_visits\":400,\"expected_enrollments\":100,\"expected_revenue\":600000},\"cost_breakdown\":{\"channel_marketing_cost\":10000,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":10000,\"variable_cost_per_enrollment\":1000,\"total_variable_cost\":100000,\"total_investment\":110000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":100,\"cost_per_enrollment\":1100,\"contribution_margin_per_enrollment\":5000,\"net_benefit\":490000},\"break_even\":{\"achievable\":true,\"enrollments\":2,\"leads\":20,\"reason\":null},\"assumptions\":[\"到访率按百分数并已归一化处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.32,\"close_rate\":0.2,\"enrollments\":64,\"revenue\":384000,\"net_benefit\":310000},{\"change_rate\":-0.1,\"visit_rate\":0.36,\"close_rate\":0.225,\"enrollments\":81,\"revenue\":486000,\"net_benefit\":395000},{\"change_rate\":0,\"visit_rate\":0.4,\"close_rate\":0.25,\"enrollments\":100,\"revenue\":600000,\"net_benefit\":490000},{\"change_rate\":0.1,\"visit_rate\":0.44,\"close_rate\":0.275,\"enrollments\":121,\"revenue\":726000,\"net_benefit\":595000},{\"change_rate\":0.2,\"visit_rate\":0.48,\"close_rate\":0.3,\"enrollments\":144,\"revenue\":864000,\"net_benefit\":710000}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:missing-variable-cost",
+        "input": "tests/calculator-cases/missing-variable-cost.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/missing-variable-cost.json",
+        "expected": "exit=2 expected={\"errors\":[\"单个报名可变成本缺失\"],\"status\":\"invalid\"}",
+        "actual": "exit=2 actual={\"formula_version\":\"1.0.1\",\"status\":\"invalid\",\"errors\":[\"单个报名可变成本缺失\"],\"assumptions\":[],\"confirmations\":[]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:negative-leads",
+        "input": "tests/calculator-cases/negative-leads.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/negative-leads.json",
+        "expected": "exit=2 expected={\"errors\":[\"预计线索量不得小于0\"],\"status\":\"invalid\"}",
+        "actual": "exit=2 actual={\"formula_version\":\"1.0.1\",\"status\":\"invalid\",\"errors\":[\"预计线索量不得小于0\"],\"assumptions\":[],\"confirmations\":[]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:zero-rates",
+        "input": "tests/calculator-cases/zero-rates.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/zero-rates.json",
+        "expected": "exit=0 expected={\"break_even\":{\"leads\":null,\"achievable\":true,\"enrollments\":2},\"status\":\"ok\"}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":1000,\"expected_visits\":0,\"expected_enrollments\":0,\"expected_revenue\":0},\"cost_breakdown\":{\"channel_marketing_cost\":10000,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":10000,\"variable_cost_per_enrollment\":1000,\"total_variable_cost\":0,\"total_investment\":10000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":null,\"cost_per_enrollment\":null,\"contribution_margin_per_enrollment\":5000,\"net_benefit\":-10000},\"break_even\":{\"achievable\":true,\"enrollments\":2,\"leads\":null,\"reason\":\"报名盈亏平衡数可计算，但转化为零，无法反推可实现线索数\"},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[\"到访率或成交率为零，无法形成有效盈亏平衡线索数\",\"预计报名人数为零，单个报名成本为空\"],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0,\"close_rate\":0,\"enrollments\":0,\"revenue\":0,\"net_benefit\":-10000},{\"change_rate\":-0.1,\"visit_rate\":0,\"close_rate\":0,\"enrollments\":0,\"revenue\":0,\"net_benefit\":-10000},{\"change_rate\":0,\"visit_rate\":0,\"close_rate\":0,\"enrollments\":0,\"revenue\":0,\"net_benefit\":-10000},{\"change_rate\":0.1,\"visit_rate\":0,\"close_rate\":0,\"enrollments\":0,\"revenue\":0,\"net_benefit\":-10000},{\"change_rate\":0.2,\"visit_rate\":0,\"close_rate\":0,\"enrollments\":0,\"revenue\":0,\"net_benefit\":-10000}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:zero-fixed-cost",
+        "input": "tests/calculator-cases/zero-fixed-cost.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/zero-fixed-cost.json",
+        "expected": "exit=0 expected={\"break_even\":{\"leads\":0,\"achievable\":true,\"enrollments\":0},\"status\":\"ok\"}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":100,\"expected_visits\":100,\"expected_enrollments\":100,\"expected_revenue\":100000},\"cost_breakdown\":{\"channel_marketing_cost\":0,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":0,\"variable_cost_per_enrollment\":100,\"total_variable_cost\":10000,\"total_investment\":10000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":null,\"cost_per_enrollment\":100,\"contribution_margin_per_enrollment\":900,\"net_benefit\":90000},\"break_even\":{\"achievable\":true,\"enrollments\":0,\"leads\":0,\"reason\":null},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[\"渠道营销费用为零，获客成本不可解释为真实投放效率\"],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.8,\"close_rate\":0.8,\"enrollments\":64,\"revenue\":64000,\"net_benefit\":57600},{\"change_rate\":-0.1,\"visit_rate\":0.9,\"close_rate\":0.9,\"enrollments\":81,\"revenue\":81000,\"net_benefit\":72900},{\"change_rate\":0,\"visit_rate\":1,\"close_rate\":1,\"enrollments\":100,\"revenue\":100000,\"net_benefit\":90000},{\"change_rate\":0.1,\"visit_rate\":1.1,\"close_rate\":1.1,\"enrollments\":121,\"revenue\":121000,\"net_benefit\":108900},{\"change_rate\":0.2,\"visit_rate\":1.2,\"close_rate\":1.2,\"enrollments\":144,\"revenue\":144000,\"net_benefit\":129600}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:nonpositive-contribution",
+        "input": "tests/calculator-cases/nonpositive-contribution.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/nonpositive-contribution.json",
+        "expected": "exit=0 expected={\"break_even\":{\"leads\":null,\"achievable\":false,\"enrollments\":null,\"reason\":\"单个报名贡献毛利小于或等于零\"},\"status\":\"ok\"}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":1000,\"expected_visits\":400,\"expected_enrollments\":100,\"expected_revenue\":100000},\"cost_breakdown\":{\"channel_marketing_cost\":10000,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":10000,\"variable_cost_per_enrollment\":1000,\"total_variable_cost\":100000,\"total_investment\":110000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":100,\"cost_per_enrollment\":1100,\"contribution_margin_per_enrollment\":0,\"net_benefit\":-10000},\"break_even\":{\"achievable\":false,\"enrollments\":null,\"leads\":null,\"reason\":\"单个报名贡献毛利小于或等于零\"},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[\"单个报名贡献毛利小于或等于零，无法形成有效盈亏平衡报名数\"],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.32,\"close_rate\":0.2,\"enrollments\":64,\"revenue\":64000,\"net_benefit\":-10000},{\"change_rate\":-0.1,\"visit_rate\":0.36,\"close_rate\":0.225,\"enrollments\":81,\"revenue\":81000,\"net_benefit\":-10000},{\"change_rate\":0,\"visit_rate\":0.4,\"close_rate\":0.25,\"enrollments\":100,\"revenue\":100000,\"net_benefit\":-10000},{\"change_rate\":0.1,\"visit_rate\":0.44,\"close_rate\":0.275,\"enrollments\":121,\"revenue\":121000,\"net_benefit\":-10000},{\"change_rate\":0.2,\"visit_rate\":0.48,\"close_rate\":0.3,\"enrollments\":144,\"revenue\":144000,\"net_benefit\":-10000}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:boundary-rates",
+        "input": "tests/calculator-cases/boundary-rates.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/boundary-rates.json",
+        "expected": "exit=0 expected={\"projections\":{\"expected_visits\":10,\"expected_enrollments\":10},\"status\":\"ok\"}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":10,\"expected_visits\":10,\"expected_enrollments\":10,\"expected_revenue\":10000},\"cost_breakdown\":{\"channel_marketing_cost\":100,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":100,\"variable_cost_per_enrollment\":0,\"total_variable_cost\":0,\"total_investment\":100,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":10,\"cost_per_enrollment\":10,\"contribution_margin_per_enrollment\":1000,\"net_benefit\":9900},\"break_even\":{\"achievable\":true,\"enrollments\":1,\"leads\":1,\"reason\":null},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.8,\"close_rate\":0.8,\"enrollments\":6.4,\"revenue\":6400,\"net_benefit\":6300},{\"change_rate\":-0.1,\"visit_rate\":0.9,\"close_rate\":0.9,\"enrollments\":8.1,\"revenue\":8100,\"net_benefit\":8000},{\"change_rate\":0,\"visit_rate\":1,\"close_rate\":1,\"enrollments\":10,\"revenue\":10000,\"net_benefit\":9900},{\"change_rate\":0.1,\"visit_rate\":1.1,\"close_rate\":1.1,\"enrollments\":12.1,\"revenue\":12100,\"net_benefit\":12000},{\"change_rate\":0.2,\"visit_rate\":1.2,\"close_rate\":1.2,\"enrollments\":14.4,\"revenue\":14400,\"net_benefit\":14300}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:extreme-leads",
+        "input": "tests/calculator-cases/extreme-leads.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/extreme-leads.json",
+        "expected": "exit=0 expected={\"projections\":{\"expected_visits\":10000000,\"expected_enrollments\":100000},\"status\":\"ok\"}",
+        "actual": "exit=0 actual={\"formula_version\":\"1.0.1\",\"status\":\"ok\",\"projections\":{\"expected_leads\":1000000000,\"expected_visits\":10000000,\"expected_enrollments\":100000,\"expected_revenue\":500000000},\"cost_breakdown\":{\"channel_marketing_cost\":1000000,\"personnel_cost\":0,\"activity_fixed_cost\":0,\"fixed_investment\":1000000,\"variable_cost_per_enrollment\":500,\"total_variable_cost\":50000000,\"total_investment\":51000000,\"cost_guard\":\"渠道营销费用、人员成本、活动固定成本只计入固定投入；单人可变成本按预计报名人数计入\"},\"economics\":{\"customer_acquisition_cost\":10,\"cost_per_enrollment\":510,\"contribution_margin_per_enrollment\":4500,\"net_benefit\":449000000},\"break_even\":{\"achievable\":true,\"enrollments\":223,\"leads\":2230000,\"reason\":null},\"assumptions\":[\"到访率按小数口径处理\",\"预计线索量、到访率和成交率为同一时间窗口与同一客群口径\",\"渠道营销费用只计算一次，不重复计入活动固定成本\"],\"confirmations\":[\"确认渠道报价是否含税、是否包含返点和平台服务费\",\"确认人员成本是否仅覆盖本活动周期\",\"确认单个报名可变成本不包含已在固定投入中列示的项目\"],\"warnings\":[],\"sensitivity\":[{\"change_rate\":-0.2,\"visit_rate\":0.008,\"close_rate\":0.008,\"enrollments\":64000,\"revenue\":320000000,\"net_benefit\":287000000},{\"change_rate\":-0.1,\"visit_rate\":0.009,\"close_rate\":0.009,\"enrollments\":81000,\"revenue\":405000000,\"net_benefit\":363500000},{\"change_rate\":0,\"visit_rate\":0.01,\"close_rate\":0.01,\"enrollments\":100000,\"revenue\":500000000,\"net_benefit\":449000000},{\"change_rate\":0.1,\"visit_rate\":0.011,\"close_rate\":0.011,\"enrollments\":121000,\"revenue\":605000000,\"net_benefit\":543500000},{\"change_rate\":0.2,\"visit_rate\":0.012,\"close_rate\":0.012,\"enrollments\":144000,\"revenue\":720000000,\"net_benefit\":647000000}]}",
+        "passed": true
+      },
+      {
+        "name": "calculator:malformed-json",
+        "input": "tests/calculator-cases/malformed-json.json",
+        "execution": "node scripts/calculate.js tests/calculator-cases/malformed-json.json",
+        "expected": "exit=2 expected={\"errors\":[\"输入文件不是有效JSON\"],\"status\":\"invalid\"}",
+        "actual": "exit=2 actual={\"formula_version\":\"1.0.1\",\"status\":\"invalid\",\"errors\":[\"输入文件不是有效JSON\"],\"assumptions\":[],\"confirmations\":[]}",
+        "passed": true
+      },
+      {
+        "name": "scenario:missing.json",
+        "input": "tests/scenarios/missing.json",
+        "execution": "node scripts/validate_input.js tests/scenarios/missing.json",
+        "expected": "exit=2 status=NEEDS_INPUT",
+        "actual": "exit=2 status=NEEDS_INPUT",
+        "passed": true
+      },
+      {
+        "name": "scenario:conflict.json",
+        "input": "tests/scenarios/conflict.json",
+        "execution": "node scripts/validate_input.js tests/scenarios/conflict.json",
+        "expected": "exit=2 status=NEEDS_CONFIRMATION",
+        "actual": "exit=2 status=NEEDS_CONFIRMATION",
+        "passed": true
+      },
+      {
+        "name": "scenario:sensitive.json",
+        "input": "tests/scenarios/sensitive.json",
+        "execution": "node scripts/validate_input.js tests/scenarios/sensitive.json",
+        "expected": "exit=0 status=READY_WITH_PRIVACY_WARNING",
+        "actual": "exit=0 status=READY_WITH_PRIVACY_WARNING",
+        "passed": true
+      },
+      {
+        "name": "scenario:malformed.txt",
+        "input": "tests/scenarios/malformed.txt",
+        "execution": "node scripts/validate_input.js tests/scenarios/malformed.txt",
+        "expected": "exit=2 status=INVALID_JSON",
+        "actual": "exit=2 status=INVALID_JSON",
+        "passed": true
+      }
+    ],
+    "T6_SECURITY": [
+      {
+        "name": "secret_patterns",
+        "input": "secret_patterns",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "0",
+        "actual": "0",
+        "passed": true
+      },
+      {
+        "name": "paid_api_dependency",
+        "input": "paid_api_dependency",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "0",
+        "actual": "0",
+        "passed": true
+      },
+      {
+        "name": "internal_paths",
+        "input": "internal_paths",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "0",
+        "actual": "0",
+        "passed": true
+      }
+    ],
+    "T7_PACKAGE_INTEGRITY": [
+      {
+        "name": "zip_exists",
+        "input": "zip_exists",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "exists",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "package_entries",
+        "input": "package_entries",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "manifest entries equal zip entries",
+        "actual": "10 entries",
+        "passed": true
+      },
+      {
+        "name": "license_in_zip",
+        "input": "license_in_zip",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "LICENSE",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "license_manifest",
+        "input": "license_manifest",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "license registered with normalized SHA-256",
+        "actual": "manifest=CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30 repository=CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+        "passed": true
+      },
+      {
+        "name": "license_zip_matches_repository",
+        "input": "license_zip_matches_repository",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+        "actual": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+        "passed": true
+      },
+      {
+        "name": "zip_sha256",
+        "input": "zip_sha256",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "76C83A9DD023A97F9ED838B2ED24A733AFE26E3A21EA27A7AC871B8774151DE9",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "third_party_notice",
+        "input": "third_party_notice",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "THIRD_PARTY_NOTICES.md",
+        "actual": "checked",
+        "passed": true
+      },
+      {
+        "name": "manifest_version",
+        "input": "manifest_version",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "1.0.1",
+        "actual": "1.0.1",
+        "passed": true
+      },
+      {
+        "name": "package_state",
+        "input": "package_state",
+        "execution": "PowerShell static or contract assertion in tests/validate_package.ps1",
+        "expected": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+        "actual": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+        "passed": true
+      }
+    ]
+  },
+  "layer_status": {
+    "T1_FILE_STRUCTURE": "PASS",
+    "T2_METADATA_CONTRACT": "PASS",
+    "T3_PRODUCT_CONTRACT": "PASS",
+    "T4_DETERMINISTIC_FUNCTION": "PASS",
+    "T5_SCENARIO_TESTS": "PASS",
+    "T6_SECURITY": "PASS",
+    "T7_PACKAGE_INTEGRITY": "PASS"
+  },
+  "t5_execution_mode": "PASS_DETERMINISTIC_SCENARIOS",
+  "model_runtime_status": "NOT_RUNTIME_VERIFIED",
+  "overall_package_status": "G9_PRE_RELEASE_ACCEPTED",
+  "errors": []
+}

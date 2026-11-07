@@ -1,0 +1,149 @@
+[
+  {
+    "id": "normal",
+    "layer": "T4_DETERMINISTIC_FUNCTION",
+    "input_file": "tests/calculator-cases/normal.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "status": "ok",
+      "projections": {
+        "expected_revenue": 600000,
+        "expected_visits": 400,
+        "expected_enrollments": 100
+      },
+      "economics": {
+        "customer_acquisition_cost": 100,
+        "contribution_margin_per_enrollment": 5000,
+        "net_benefit": 482000,
+        "cost_per_enrollment": 1180
+      },
+      "break_even": {
+        "leads": 40,
+        "achievable": true,
+        "enrollments": 4
+      }
+    }
+  },
+  {
+    "id": "percent-input",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/percent-input.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "status": "ok",
+      "projections": {
+        "expected_visits": 400,
+        "expected_enrollments": 100
+      },
+      "break_even": {
+        "leads": 20,
+        "enrollments": 2
+      }
+    }
+  },
+  {
+    "id": "missing-variable-cost",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/missing-variable-cost.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "单个报名可变成本缺失"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "negative-leads",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/negative-leads.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "预计线索量不得小于0"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "zero-rates",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/zero-rates.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "break_even": {
+        "leads": null,
+        "achievable": true,
+        "enrollments": 2
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "zero-fixed-cost",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/zero-fixed-cost.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "break_even": {
+        "leads": 0,
+        "achievable": true,
+        "enrollments": 0
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "nonpositive-contribution",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/nonpositive-contribution.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "break_even": {
+        "leads": null,
+        "achievable": false,
+        "enrollments": null,
+        "reason": "单个报名贡献毛利小于或等于零"
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "boundary-rates",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/boundary-rates.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "projections": {
+        "expected_visits": 10,
+        "expected_enrollments": 10
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "extreme-leads",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/extreme-leads.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "projections": {
+        "expected_visits": 10000000,
+        "expected_enrollments": 100000
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "malformed-json",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/malformed-json.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "输入文件不是有效JSON"
+      ],
+      "status": "invalid"
+    }
+  }
+]

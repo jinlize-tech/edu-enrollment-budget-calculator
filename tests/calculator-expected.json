@@ -1,10 +1,1 @@
-{
-  "status": "ok",
-  "totals": {
-    "netProfit": 35000,
-    "overallCostPerEnrollment": 1000,
-    "enrollments": 10,
-    "spend": 10000,
-    "revenue": 60000
-  }
-}
+null
