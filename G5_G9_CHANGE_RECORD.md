@@ -8,29 +8,66 @@
 - 1.0.0冻结基线：`EDUCATION_BASELINE_V1.0.0`
 - 1.0.0基线Commit：`faebceecaa12496012eb0f8fdf6c5ec267968735`
 - 1.0.1原版本Commit：`f8427422c30b78ef79b4a0a6cb8f08a233fdfdef`
-- 1.0.2实施Commit：`PENDING_IMPLEMENTATION_COMMIT`
+- 1.0.2实施Commit：`cd45b8282950e12ff4574592c412e1317f0b24c3`
 - 1.0.2最终证据Commit：`由 product-v1.0.2 Tag 指向的最新证据提交`
 - 新版本：`1.0.2`
 
 ## 1.0.2 变更内容
 
-1. 修复招生预算敏感性分析的 0 至 1 比率边界，超过 100% 时封顶并输出封顶标识，低于 0% 时下限为 0。
-2. 拒绝到访率或成交率大于 100% 的原始输入，不对原始输入静默改写。
-3. 增加正常、正向封顶、零值下浮、非法超限和负向敏感性测试。
-4. 补充 BASELINE_VERSION.md 的产品身份信息，不修改历史冻结内容和基线 Tag。
-5. 重新生成 1.0.2 安装包、package-manifest、测试证据和 SHA-256。
+1. 实际修改 `scripts/calculate.js`：敏感性分析增加 0 至 1 比率上下限和封顶/下限标识。
+2. 非法到访率或成交率超过 100% 时明确报错，不静默修改用户原始输入。
+3. 新增正向封顶、零值下浮、非法超限、正常和负向敏感性数值测试。
+4. 补充 `BASELINE_VERSION.md` 当前 main 身份信息。
+5. 重新生成 1.0.2 ZIP、清单、测试证据和 SHA-256。
 
 ## 实际修改文件
 
-- `VERIFICATION_PENDING`
+- `BASELINE_VERSION.md`
+- `CHANGELOG.md`
+- `dist/edu-enrollment-budget-calculator-v1.0.2.zip`
+- `G5_G9_CHANGE_RECORD.md`
+- `G5_G9_R2_ACCEPTANCE.md`
+- `package-manifest.json`
+- `product_meta.json`
+- `README.md`
+- `scripts/calculate.js`
+- `SKILL.md`
+- `test-results/v1.0.2.json`
+- `tests/calculator-cases.json`
+- `tests/calculator-cases/boundary-rates.json`
+- `tests/calculator-cases/close-rate-0-down-20.json`
+- `tests/calculator-cases/close-rate-100-up-20.json`
+- `tests/calculator-cases/close-rate-above-100.json`
+- `tests/calculator-cases/extreme-leads.json`
+- `tests/calculator-cases/missing-variable-cost.json`
+- `tests/calculator-cases/negative-leads.json`
+- `tests/calculator-cases/negative-sensitivity.json`
+- `tests/calculator-cases/nonpositive-contribution.json`
+- `tests/calculator-cases/normal-sensitivity.json`
+- `tests/calculator-cases/normal.json`
+- `tests/calculator-cases/percent-input.json`
+- `tests/calculator-cases/visit-rate-0-down-20.json`
+- `tests/calculator-cases/visit-rate-100-up-20.json`
+- `tests/calculator-cases/visit-rate-above-100.json`
+- `tests/calculator-cases/zero-fixed-cost.json`
+- `tests/calculator-cases/zero-rates.json`
+- `tests/TEST_REPORT-v1.0.2.md`
+- `tests/validate_package.ps1`
+- `VERSION`
 
 ## 测试项目与结果
 
-- 总测试状态：`VERIFICATION_PENDING`
+- 总测试状态：`G9_R2_PRE_RELEASE_ACCEPTED`
 
 | 测试层 | 结果 |
 |---|---|
-| T1-T7 | VERIFICATION_PENDING |
+| T1_FILE_STRUCTURE | PASS |
+| T2_METADATA_CONTRACT | PASS |
+| T3_PRODUCT_CONTRACT | PASS |
+| T4_DETERMINISTIC_FUNCTION | PASS |
+| T5_SCENARIO_TESTS | PASS |
+| T6_SECURITY | PASS |
+| T7_PACKAGE_INTEGRITY | PASS |
 
 ## 安装包
 
