@@ -5,23 +5,23 @@
     "input_file": "tests/calculator-cases/normal.json",
     "expected_exit_code": 0,
     "expected": {
-      "status": "ok",
-      "projections": {
-        "expected_revenue": 600000,
-        "expected_visits": 400,
-        "expected_enrollments": 100
+      "break_even": {
+        "enrollments": 4,
+        "achievable": true,
+        "leads": 40
       },
       "economics": {
-        "customer_acquisition_cost": 100,
+        "cost_per_enrollment": 1180,
         "contribution_margin_per_enrollment": 5000,
         "net_benefit": 482000,
-        "cost_per_enrollment": 1180
+        "customer_acquisition_cost": 100
       },
-      "break_even": {
-        "leads": 40,
-        "achievable": true,
-        "enrollments": 4
-      }
+      "projections": {
+        "expected_visits": 400,
+        "expected_revenue": 600000,
+        "expected_enrollments": 100
+      },
+      "status": "ok"
     }
   },
   {
@@ -30,15 +30,15 @@
     "input_file": "tests/calculator-cases/percent-input.json",
     "expected_exit_code": 0,
     "expected": {
-      "status": "ok",
-      "projections": {
-        "expected_visits": 400,
-        "expected_enrollments": 100
-      },
       "break_even": {
-        "leads": 20,
-        "enrollments": 2
-      }
+        "enrollments": 2,
+        "leads": 20
+      },
+      "projections": {
+        "expected_enrollments": 100,
+        "expected_visits": 400
+      },
+      "status": "ok"
     }
   },
   {
@@ -72,9 +72,9 @@
     "expected_exit_code": 0,
     "expected": {
       "break_even": {
-        "leads": null,
+        "enrollments": 2,
         "achievable": true,
-        "enrollments": 2
+        "leads": null
       },
       "status": "ok"
     }
@@ -86,9 +86,9 @@
     "expected_exit_code": 0,
     "expected": {
       "break_even": {
-        "leads": 0,
+        "enrollments": 0,
         "achievable": true,
-        "enrollments": 0
+        "leads": 0
       },
       "status": "ok"
     }
@@ -100,10 +100,10 @@
     "expected_exit_code": 0,
     "expected": {
       "break_even": {
-        "leads": null,
-        "achievable": false,
         "enrollments": null,
-        "reason": "单个报名贡献毛利小于或等于零"
+        "reason": "单个报名贡献毛利小于或等于零",
+        "achievable": false,
+        "leads": null
       },
       "status": "ok"
     }
@@ -115,8 +115,174 @@
     "expected_exit_code": 0,
     "expected": {
       "projections": {
-        "expected_visits": 10,
-        "expected_enrollments": 10
+        "expected_enrollments": 10,
+        "expected_visits": 10
+      },
+      "status": "ok"
+    }
+  },
+  {
+    "id": "visit-rate-100-up-20",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/visit-rate-100-up-20.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "0.2": {
+          "visit_rate_cap_applied": true,
+          "visit_rate_floor_applied": false,
+          "net_benefit": 53000,
+          "revenue": 60000,
+          "close_rate": 0.6,
+          "enrollments": 60,
+          "requested_visit_rate": 1.2,
+          "visit_rate": 1
+        }
+      },
+      "sensitivity_cap_scenarios": [
+        "visit_rate:0.1",
+        "visit_rate:0.2"
+      ],
+      "sensitivity_floor_scenarios": [],
+      "status": "ok"
+    }
+  },
+  {
+    "id": "close-rate-100-up-20",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/close-rate-100-up-20.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "0.2": {
+          "requested_close_rate": 1.2,
+          "net_benefit": 53000,
+          "revenue": 60000,
+          "close_rate_floor_applied": false,
+          "enrollments": 60,
+          "close_rate": 1,
+          "visit_rate": 0.6,
+          "close_rate_cap_applied": true
+        }
+      },
+      "sensitivity_cap_scenarios": [
+        "close_rate:0.1",
+        "close_rate:0.2"
+      ],
+      "sensitivity_floor_scenarios": [],
+      "status": "ok"
+    }
+  },
+  {
+    "id": "visit-rate-0-down-20",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/visit-rate-0-down-20.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "-0.2": {
+          "revenue": 0,
+          "visit_rate_floor_applied": true,
+          "visit_rate": 0,
+          "net_benefit": -1000,
+          "enrollments": 0,
+          "requested_visit_rate": 0
+        }
+      },
+      "sensitivity_cap_scenarios": [],
+      "sensitivity_floor_scenarios": [
+        "visit_rate:-0.2",
+        "visit_rate:-0.1"
+      ],
+      "status": "ok"
+    }
+  },
+  {
+    "id": "close-rate-0-down-20",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/close-rate-0-down-20.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "-0.2": {
+          "revenue": 0,
+          "close_rate_floor_applied": true,
+          "close_rate": 0,
+          "net_benefit": -1000,
+          "enrollments": 0,
+          "requested_close_rate": 0
+        }
+      },
+      "sensitivity_cap_scenarios": [],
+      "sensitivity_floor_scenarios": [
+        "close_rate:-0.2",
+        "close_rate:-0.1"
+      ],
+      "status": "ok"
+    }
+  },
+  {
+    "id": "visit-rate-above-100",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/visit-rate-above-100.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "到访率超出可处理范围"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "close-rate-above-100",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/close-rate-above-100.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "成交率超出可处理范围"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "normal-sensitivity",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/normal-sensitivity.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "0.1": {
+          "revenue": 726000,
+          "enrollments": 121,
+          "visit_rate": 0.44,
+          "close_rate": 0.275,
+          "net_benefit": 587000,
+          "requested_close_rate": 0.275,
+          "requested_visit_rate": 0.44
+        }
+      },
+      "sensitivity_cap_scenarios": [],
+      "sensitivity_floor_scenarios": [],
+      "status": "ok"
+    }
+  },
+  {
+    "id": "negative-sensitivity",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/negative-sensitivity.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "sensitivity_by_change_rate": {
+        "-0.2": {
+          "revenue": 384000,
+          "enrollments": 64,
+          "visit_rate": 0.32,
+          "close_rate": 0.2,
+          "net_benefit": 302000,
+          "requested_close_rate": 0.2,
+          "requested_visit_rate": 0.32
+        }
       },
       "status": "ok"
     }
@@ -128,8 +294,8 @@
     "expected_exit_code": 0,
     "expected": {
       "projections": {
-        "expected_visits": 10000000,
-        "expected_enrollments": 100000
+        "expected_enrollments": 100000,
+        "expected_visits": 10000000
       },
       "status": "ok"
     }

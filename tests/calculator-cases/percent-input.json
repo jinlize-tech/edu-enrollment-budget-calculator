@@ -1,11 +1,11 @@
 {
-  "personnelCost": 0,
-  "variableCostPerEnrollment": 1000,
-  "expectedLeads": 1000,
   "visitRate": 40,
-  "activityFixedCost": 0,
-  "averageTuition": 6000,
   "rate_unit": "percent",
+  "personnelCost": 0,
+  "activityFixedCost": 0,
+  "closeRate": 25,
+  "averageTuition": 6000,
+  "variableCostPerEnrollment": 1000,
   "channelMarketingCost": 10000,
-  "closeRate": 25
+  "expectedLeads": 1000
 }

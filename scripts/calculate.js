@@ -1,5 +1,5 @@
 const fs = require('fs');
-const formulaVersion = '1.0.1';
+const formulaVersion = '1.0.2';
 const round = (value, digits = 2) => Number(Number(value).toFixed(digits));
 function finish(payload, exitCode = 0) {
   console.log(JSON.stringify({ formula_version: formulaVersion, ...payload }, null, 2));
@@ -82,19 +82,39 @@ const breakEvenLeads = breakEvenAchievable && cumulativeConversionRate > 0
   : null;
 const sensitivityFactors = [-0.2, -0.1, 0, 0.1, 0.2];
 const sensitivity = sensitivityFactors.map(factor => {
-  const adjustedVisitRate = Math.max(0, visitRate * (1 + factor));
-  const adjustedCloseRate = Math.max(0, closeRate * (1 + factor));
+  const requestedVisitRate = visitRate * (1 + factor);
+  const requestedCloseRate = closeRate * (1 + factor);
+  const adjustedVisitRate = Math.min(1, Math.max(0, requestedVisitRate));
+  const adjustedCloseRate = Math.min(1, Math.max(0, requestedCloseRate));
   const adjustedEnrollments = expectedLeads * adjustedVisitRate * adjustedCloseRate;
   const adjustedRevenue = adjustedEnrollments * averageTuition;
   const adjustedVariableCost = adjustedEnrollments * variableCostPerEnrollment;
   return {
     change_rate: factor,
+    requested_visit_rate: round(requestedVisitRate, 6),
+    requested_close_rate: round(requestedCloseRate, 6),
     visit_rate: round(adjustedVisitRate, 6),
     close_rate: round(adjustedCloseRate, 6),
+    visit_rate_cap_applied: requestedVisitRate > 1,
+    close_rate_cap_applied: requestedCloseRate > 1,
+    visit_rate_floor_applied: requestedVisitRate < 0 || (visitRate === 0 && factor < 0),
+    close_rate_floor_applied: requestedCloseRate < 0 || (closeRate === 0 && factor < 0),
     enrollments: round(adjustedEnrollments),
     revenue: round(adjustedRevenue),
     net_benefit: round(adjustedRevenue - adjustedVariableCost - fixedInvestment)
   };
+});
+const sensitivityCapScenarios = sensitivity.flatMap(item => {
+  const scenarios = [];
+  if (item.visit_rate_cap_applied) scenarios.push(`visit_rate:${item.change_rate}`);
+  if (item.close_rate_cap_applied) scenarios.push(`close_rate:${item.change_rate}`);
+  return scenarios;
+});
+const sensitivityFloorScenarios = sensitivity.flatMap(item => {
+  const scenarios = [];
+  if (item.visit_rate_floor_applied) scenarios.push(`visit_rate:${item.change_rate}`);
+  if (item.close_rate_floor_applied) scenarios.push(`close_rate:${item.change_rate}`);
+  return scenarios;
 });
 const warnings = [];
 if (contributionPerEnrollment <= 0) warnings.push('单个报名贡献毛利小于或等于零，无法形成有效盈亏平衡报名数');
@@ -144,5 +164,13 @@ finish({
     '确认单个报名可变成本不包含已在固定投入中列示的项目'
   ],
   warnings,
+  sensitivity_cap_scenarios: sensitivityCapScenarios,
+  sensitivity_floor_scenarios: sensitivityFloorScenarios,
+  sensitivity_limits: {
+    minimum_rate: 0,
+    maximum_rate: 1,
+    cap_strategy: '敏感性分析按0至1封顶；原始请求值和封顶标识同时保留'
+  },
+  sensitivity_by_change_rate: Object.fromEntries(sensitivity.map(item => [String(item.change_rate), item])),
   sensitivity
 });

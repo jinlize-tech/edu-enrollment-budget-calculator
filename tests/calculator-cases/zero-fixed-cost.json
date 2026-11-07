@@ -1,10 +1,10 @@
 {
-  "activityFixedCost": 0,
-  "expectedLeads": 100,
-  "visitRate": 1,
   "averageTuition": 1000,
-  "variableCostPerEnrollment": 100,
+  "expectedLeads": 100,
+  "activityFixedCost": 0,
   "personnelCost": 0,
+  "visitRate": 1,
   "channelMarketingCost": 0,
-  "closeRate": 1
+  "closeRate": 1,
+  "variableCostPerEnrollment": 100
 }

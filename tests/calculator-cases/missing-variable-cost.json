@@ -1,9 +1,9 @@
 {
-  "channelMarketingCost": 10000,
-  "averageTuition": 6000,
-  "personnelCost": 5000,
   "closeRate": 0.25,
-  "expectedLeads": 1000,
+  "averageTuition": 6000,
   "visitRate": 0.4,
+  "expectedLeads": 1000,
+  "channelMarketingCost": 10000,
+  "personnelCost": 5000,
   "activityFixedCost": 3000
 }
